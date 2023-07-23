@@ -1,0 +1,26 @@
+{
+  "name": "80-2000-s_anime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "nodemon bot.js",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zalr765/80-2000-s_anime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zalr765/80-2000-s_anime/issues"
+  },
+  "homepage": "https://github.com/Zalr765/80-2000-s_anime#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-telegram-bot-api": "^0.60.0",
+    "nodemon": "^2.0.20"
+  }
+}
