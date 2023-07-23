@@ -4,6 +4,9 @@ var commands = require('./modules/commands')
 let videoID = require('./modules/videoID.json');
 
 const token = '5814757867:AAG1OCCXqJ3HXalkb4sJlnOIknG2VTRJtG0';
+var serv = require('./modules/bg');
+const keep_alive = require('./modules/bg');
+keep_alive()
 const bot = new TelegramApi(token,{polling: true});
 
 
