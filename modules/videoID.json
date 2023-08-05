@@ -2,9 +2,33 @@
     "anime" : [{
         "name" : "Neon Genesis Evangelion/Евангелион",
         "year" : 1995,
-        "vol" : [
-            "BAACAgIAAxkBAAIFcGSYFmrlzwxO3Id4WrPychkkzAuPAAKCMAACJJHBSGLWeceln1s0LwQ"
-        ],
+        "vol" : [{"name" : "Нападение Ангелов | Angel Attack!","id": "BAACAgIAAxkBAAIFcGSYFmrlzwxO3Id4WrPychkkzAuPAAKCMAACJJHBSGLWeceln1s0LwQ", "jup-id": ""},
+                {"name" : "Зверь | Unfamiliar Ceiling / The Beast", "id": "BAACAgIAAxkBAAILm2S9gaCBa58B4F13oQABd0UbKA5G4wACjTYAAu4j8UkpRIXvshsQjS8E", "jup-id": ""},
+                {"name" : "Перевод | A Transfer The Phone That Never Rings","id": "BAACAgIAAxkBAAIL3mS9j2PPL8pGMCYoTbsUMHKU1sRCAAIkNwAC7iPxSRMGcsDOz4U2LwQ", "jup-id": ""},
+                {"name" : "Дилемма дикобразов | Rain, Escape & Afterwards - Hedgehog's Dilemma","id": "BAACAgIAAxkBAAIMDmS-KUUrqIOJQ5QqRC0sfQoK7SGIAAJlLAACM2T4SZRJLpavWvuFLwQ", "jup-id": ""},
+                {"name" : "Рэй I | Rei I","id": "BAACAgIAAxkBAAIMwmTOkdCpmIL8r00oksCAxGqcIr_AAAJfNAACicF5SroCQtwrV1TMLwQ", "jup-id": ""},
+                {"name" : "Рэй II | Rei II","id": "BAACAgIAAxkBAAIMEGS-KqzvFwVUnErVesTyFHk0VB57AAJ4LAACM2T4SdzEg-w6GCdBLwQ", "jup-id": ""},
+                {"name" : "Созданный людьми | The Human Creation","id": "BAACAgIAAxkBAAIMFGS-LUJBOJg9LKY7fRPZ2Q-QVZA7AAKELAACM2T4SUBCpFbCnv6LLwQ", "jup-id": ""},
+                {"name" : "Аска наносит удар! | Asuka Strikes!","id": "BAACAgIAAxkBAAIMEmS-LT3x9QefE6LX8wqrZ1JcZbUnAAKDLAACM2T4Sb6kGq_HTq9MLwQ", "jup-id": ""},
+                {"name" : "Вы, двое, танцуйте, если хотите победить! | Both of You, Dance Like You Want to Win!","id": "BAACAgIAAxkBAAIMFmS-LambJDYROVIMZI7jNz9kF2pjAAKHLAACM2T4Sa0uJ9CRkWckLwQ", "jup-id": ""},
+                {"name" : "Погружение в магму | Magma Diver","id": "BAACAgIAAxkBAAIMa2TAHsKYm5DXaYnxCnyBlvAvxvVQAAKqMwACFxwAAUrMEEkk0JwB0y8E", "jup-id": ""},
+                {"name" : "День, когда Токио-3 замер | The Day Tokyo-3 Stood Still","id": "BAACAgIAAxkBAAIMbWTAJB0cyTI1j0zty7xL0b5LxjDGAALIMwACFxwAAUq2uEcLWni8xS8E", "jup-id": ""},
+                {"name" : "Не заставляй других страдать из-за твоей ненависти - сказала она | She said, «Don't make others suffer for your personal hatred","id": "BAACAgIAAxkBAAIMb2TAJmSI0YBoNpdEEOaCUvgQ7rAQAALWMwACFxwAAUpIt7QdxSBpIi8E", "jup-id": ""},
+                {"name" : "Мелкая неприятность | Lilliputian Hitcher","id": "BAACAgIAAxkBAAIMcWTAJ9JB0RLtZjiuMk0bSi22vdtbAALfMwACFxwAAUoJsWZQpCmmuC8E", "jup-id": ""},
+                {"name" : "Ткань повествования | Weaving a Story","id": "BAACAgIAAxkBAAIMc2TAKqJsQlaQwYBC6VhS9YYAAXHJKgACATQAAhccAAFK0-0dVWIrEtMvBA", "jup-id": ""},
+                {"name" : "Эти женщины тянулись к губам других, и сами открывались для поцелуя | Those women longed for the touch of others' lips, and thus invited their kisses","id": "BAACAgIAAxkBAAIMdWTAK5NTug4wdW3e4X7JWZ9q9qJEAAIINAACFxwAAUpa_hxDQS9ZZi8E", "jup-id": ""},
+                {"name" : "Раздвоение души | Splitting of the Breast","id": "BAACAgIAAxkBAAIMd2TALF884WN2wvYa4T6z2qS_nrC1AAIRNAACFxwAAUodoePjgY64PC8E", "jup-id": ""},
+                {"name" : "Четвёртое дитя | The Fourth Child","id": "BAACAgIAAxkBAAIMeWTALWEbuKT4MigS3doBfpW0Y1CSAAIiNAACFxwAAUoeuhRdDRJ6nS8E", "jup-id": ""},
+                {"name" : "Противоположность | Ambivalence","id": "BAACAgIAAxkBAAIMfWTAMgVIsxR5L9M2wNY8kCypx7s2AAJmNAACFxwAAUowpEctj2nhui8E", "jup-id": ""},
+                {"name" : "Интроекция | Introjection","id": "BAACAgIAAxkBAAIMf2TAMhG2FC_lR4DX23j7Al53SZsBAAJnNAACFxwAAUrr1jpED65-Cy8E", "jup-id": ""},
+                {"name" : "Ткань повествования - рассказ | Weaving a Story 2: Oral Stage","id": "BAACAgIAAxkBAAIMe2TAMc2-l_sAARzk8TYHGb33yEGMkAACYzQAAhccAAFKEo6kI3FzXRwvBA", "jup-id": ""},
+                {"name" : "Он понимал, что он ещё ребёнок | Он понимал, что он ещё ребёнок","id": "BAACAgIAAxkBAAIMgWTANvGpzMzPMBy3jX7Ab02Q_LUDAALHNAACFxwAAUr4zggtJ1Fx0C8E", "jup-id": ""},
+                {"name" : "Не будь | Don't Be","id": "BAACAgIAAxkBAAIMhWTAN1D6TtwqXYTwFzGkk9bJJ3LlAALONAACFxwAAUqpp_SvtOFyGC8E", "jup-id": ""},
+                {"name" : "Рэй III | Rei III","id": "BAACAgIAAxkBAAIMg2TANyYOdD58fHZDbp_3sFkuyBbHAALKNAACFxwAAUrVs78PVxvQXy8E", "jup-id": ""},
+                {"name" : "Начало и конец, или «Достучаться до небес» | The Beginning and the End, or «Knockin' on Heaven's Door»","id": "BAACAgIAAxkBAAIMi2TAPcxp7os1dYCZIOhsp5zfWeN1AAIONQACFxwAAUqZwOF5HgGX6i8E", "jup-id": ""},
+                {"name" : "Ты любишь меня? | Do You Love Me?","id": "BAACAgIAAxkBAAIMiWTAPNSNQbPcYcltAxN_Cl8QWofZAAL7NAACFxwAAUqvJeteE61hci8E", "jup-id": ""},
+                {"name" : "Береги себя | Take Care of Yourselfg","id": "BAACAgIAAxkBAAIMjWTAPgel7_Il5pPk3ebWr-Mth-82AAIQNQACFxwAAUqE09T1l8_PQC8E", "jup-id": ""}
+            ],
         "categories": [
             "Меха", "Психологическое" , "постапокалиптика"
         ],
@@ -15,8 +39,32 @@
     {
         "name" : "Cowboy Bebop/Ковбой Бибоп",
         "year" : 1998,
-        "vol" : [
-            
+        "vol" :[{"name" : "Asteroid Blues | Блюз Астероида","id": "BAACAgIAAxkBAAIMkGTGW6JUtESUS_XUfNyAJifPCjnNAAImNQACFxwAAUqFdIjlLZaSby8E", "jup-id": ""},
+        {"name" : "Stray Dog Strut | Потерявшийся Пёс", "id": "BAACAgIAAxkBAAIMmGTOhYFav6O28aJer0WY8AAB1hkgugACuDIAAonBeUrtYFSa5wH1gC8E", "jup-id": ""},
+        {"name" : "Honky Tonk Women | Женщины на Подсадку","id": "", "jup-id": "BAACAgIAAxkBAAIMoWTOicFGH9pqzLdbMqrZnbXrlXAgAAIfMwACicF5Sppf_Y2HFzB_LwQ"},
+        {"name" : "Gateway Shuffle | Портальное Танго","id": "BAACAgIAAxkBAAIMomTOid1bpGjDWcDbSc_sFkm8FHXfAAIjMwACicF5Sg-5LgF-JYuwLwQ", "jup-id": ""},
+        {"name" : "Ballad of Fallen Angels | Баллада Падших Ангелов","id": "BAACAgIAAxkBAAIMlWTOgg_fU_2ylvKa3TvYDNs5iy0_AAKNMgACicF5SuqmizP3PMA3LwQ", "jup-id": ""},
+        {"name" : "Sympathy for the Devil | Песнь печали по дьяволу","id": "BAACAgIAAxkBAAIMlmTOhNKay1flA4TJA63Lwc-slbE-AAKzMgACicF5Si9MyBVou89mLwQ", "jup-id": ""},
+        {"name" : "Heavy Metal Queen | Королева Хэви-Метала","id": "BAACAgIAAxkBAAIMo2TOieT4Bx9ZfwtSTATNznznJXecAAIlMwACicF5SvIDE_ozCZkSLwQ", "jup-id": ""},
+        {"name" : "Waltz for Venus | Вальс для Венеры","id": "BAACAgIAAxkBAAIMqmTOi11_8AZbXb-eF3-V9TAshp_1AAJJMwACicF5Soovd0fgrmqtLwQ", "jup-id": ""},
+        {"name" : "Jamming with Edward | Заглушая с Эдвардом","id": "BAACAgIAAxkBAAIMt2TOjWZhefZuJCRbLm-lEV1KsZwpAALXMwACicF5SgGX0TZMnyKTLwQ", "jup-id": ""},
+        {"name" : "Ganymede Elegy | Элегия Ганимеда","id": "BAACAgIAAxkBAAIMuGTOjWwwAr8ZlJ6LIpw_B_lJLntyAALZMwACicF5SvcyXqfe7WamLwQ", "jup-id": ""},
+        {"name" : "Toys in the Attic | Игрушки на Чердаке","id": "BAACAgIAAxkBAAIMvWTOkGO2xfxa131YLo5onSLrKd5ZAAJANAACicF5Sn7Inv2AZ-ZfLwQ", "jup-id": ""},
+        {"name" : "Jupiter Jazz Part I | Джаз Юпитера (Часть 1)","id": "BAACAgIAAxkBAAIMyGTOlA5c5NKaMv6PHLwwZp4YkqJzAAKXNAACicF5SpkrLhwZTfsrLwQ", "jup-id": ""},
+        {"name" : "Jupiter Jazz Part II | Джаз Юпитера (Часть 2)","id": "BAACAgIAAxkBAAIMyWTOlB3N3IU2qgSiJEp80UiLDkc1AAKaNAACicF5SmvKUFi-D4XwLwQ", "jup-id": ""},
+        {"name" : "Bohemian Rhapsody | Богемская Рапсодия","id": "BAACAgIAAxkBAAIM1mTOlhKWmJt2PaN3ZCbfLXCuJCcYAALZNAACicF5Stf773250o-pLwQ", "jup-id": ""},
+        {"name" : "My Funny Valentine | Моя Смешная Валентайн","id": "BAACAgIAAxkBAAIM12TOlhtOCmFCgqD4fuJ_H7PNlVEwAALbNAACicF5Snf-YQABooeBIS8E", "jup-id": ""},
+        {"name" : "Black Dog Serenade | Серенада Чёрного Пса","id": "BAACAgIAAxkBAAIM3GTOl1yLbyVmsU3jLpzu-iJLRc1dAALoNAACicF5SkFcLLxZdiqSLwQ", "jup-id": ""},
+        {"name" : "Mushroom Samba | Грибная Самба","id": "BAACAgIAAxkBAAIM5WTOmKKXGy4EhicTTmcp5SzU2VlEAAL0NAACicF5SoaRX-VdbjgeLwQ'", "jup-id": ""},
+        {"name" : "Speak Like A Child | Устами Младенца","id": "BAACAgIAAxkBAAIM5mTOmboG1G1HbUCD0X_hsVy8LzEbAAJyMQACKnxxSgqc73dSbcBDLwQ", "jup-id": ""},
+        {"name" : "Wild Horses | Дикие Лошади","id": "", "jup-id": "BAACAgIAAxkBAAIM62TOmrZJArcekkyg7RZD78kNbfakAAKCMQACKnxxSg8MiuJVRXZlLwQ"},
+        {"name" : "Pierrot Le Fou | Безумный Пьеро","id": "BAACAgIAAxkBAAIM8GTOm6sfuNxJCZnqSudJF5OObOk8AAKGMQACKnxxSqQt3LDyIU8MLwQ", "jup-id": ""},
+        {"name" : "Boogie-Woogie Feng-Shui | Буги-Вуги Фэн-Шуй","id": "BAACAgIAAxkBAAIM9WTOnT3AD7Mo8HtkRhgThKJ-Rm1wAAKLMQACKnxxSkmd66iwl80TLwQ", "jup-id": ""},
+        {"name" : "Cowboy Funk | Ковбойский Фанк","id": "BAACAgIAAxkBAAIM9mTOnqPpvc0V0GEa2j8bS_1RGsRMAAKRMQACKnxxSjfI-GMBnfrTLwQ", "jup-id": ""},
+        {"name" : "Brain Scratch | Оцарапанные Мозги","id": "BAACAgIAAxkBAAIM92TOn9BCmNjkkT5cL5wpl-dQqioFAAKYMQACKnxxShVZkLe6D3IFLwQ", "jup-id": ""},
+        {"name" : "Hard Luck Woman | Невезучая Женщина","id": "BAACAgIAAxkBAAIM-GTOn9TuSkocB-jhuiTLPDSHvrTuAAKZMQACKnxxSnxJ7uFWeyghLwQ", "jup-id": ""},
+        {"name" : "The Real Folk Blues Part I | Блюз Настоящих Мужчин (Часть 1)","id": "BAACAgIAAxkBAAIMl2TOhWTJNtro-L5Q1PVOhZP5NVy-AAK2MgACicF5SjghhRZtWvUcLwQ", "jup-id": ""},
+        {"name" : "The Real Folk Blues Part II | Блюз Настоящих Мужчин (Часть 2)","id": "BAACAgIAAxkBAAIMkmTGgrtdzkeGVZ99dCADVEsy7vdcAAK7OAACJhk5Sre4V-qXOkyZLwQ", "jup-id": ""}
         ],
         "categories": [
             "Вестерн", "Неонуар" , "Космос"

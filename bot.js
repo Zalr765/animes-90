@@ -120,6 +120,7 @@ var handler = (search_mes) => {
 
 
 bot.on('message', async msg => {
+  console.log(msg)
     const text = msg.text;
     const chat_id = msg.chat.id;
     var isMember = await bot.getChatMember('@anime_80_2000s_chanale', chat_id)
@@ -161,11 +162,12 @@ bot.on('message', async msg => {
 bot.on('callback_query', async msg => {
   const chat_id = msg.message.chat.id
   const callback = msg.data 
+  var titleRegex = /^(.*?)(?=\/)/
   if(callback === "eva"){
-    var eva = new NewAnime(bot, chat_id, videoID.anime[0].name, videoID.anime[0].photo, videoID.anime[0].description).sendAnime()
+    var eva = new NewAnime(bot, chat_id, titleRegex.exec(videoID.anime[0].name)[0], videoID.anime[0].photo, videoID.anime[0].description).sendAnime()
   }
   if(callback === "bibop"){
-    var bibop = new NewAnime(bot, chat_id,videoID.anime[1].name, videoID.anime[1].photo, videoID.anime[1].description).sendAnime()
+    var bibop = new NewAnime(bot, chat_id, titleRegex.exec(videoID.anime[1].name)[0], videoID.anime[1].photo, videoID.anime[1].description).sendAnime()
   }
 });
 

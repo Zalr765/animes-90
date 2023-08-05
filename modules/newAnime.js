@@ -9,6 +9,7 @@ const NewAnime  = class {
         this.bot = bot
     }
     sendAnime(){
+        var titleRegex = /^(.*?)(?=\/)/
         function generateUniqueId() {
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
               var r = Math.random() * 16 | 0,
@@ -28,11 +29,11 @@ const NewAnime  = class {
                 const callback = query.data 
                 if(callback === callback_id){
                     for(var i = 0;i <= videoID.anime.length - 1; i++ ){
-                        if(videoID.anime[i].name === this.title){
-                            var frst = videoID.anime[i].vol[0]
+                        if(titleRegex.exec(videoID.anime[i].name)[0] === this.title){
+                            var video = videoID.anime[i].vol[0].id
                         }
                     }
-                    new MediaPlayer(this.bot, this.chat_id, frst, this.title).send() 
+                    new MediaPlayer(this.bot, this.chat_id, video , this.title).send() 
                 }
             })
     }

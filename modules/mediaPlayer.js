@@ -1,3 +1,4 @@
+let videoID = require('./videoID.json');
 const MediaPlayer = class {
 
     constructor(bot, chat_id, video, title){
@@ -14,6 +15,12 @@ const MediaPlayer = class {
           return v.toString(16);
         });
       }
+      var titleRegex = /^(.*?)(?=\/)/
+      for(var i = 0;i <= videoID.anime.length - 1; i++ ){
+        if(titleRegex.exec(videoID.anime[i].name)[0] === this.title){
+            var video = videoID.anime[i]
+        }
+    }
       var unqID = generateUniqueId()
       var counter =1
       function anime_menu(num, title){
@@ -21,7 +28,7 @@ const MediaPlayer = class {
           reply_markup: JSON.stringify({
             inline_keyboard: [
               [{text: '<<', callback_data: `${title}btn1${unqID}`},
-              { text: `${num}`, callback_data: `number`}, 
+              { text: `${num}/${video.vol.length}`, callback_data: `number`}, 
               { text: '>>', callback_data: `${title}btn2${unqID}` }]
             ]
           })
@@ -29,33 +36,43 @@ const MediaPlayer = class {
         return opt
       }
       
-      const staerKeyBoard = {
+      const startKeyboard = {
         reply_markup:
         JSON.stringify({
           inline_keyboard: [
-            [{ text: `1`, callback_data: `number`}, 
+            [{ text: `1/${video.vol.length}`, callback_data: `number`}, 
             { text: '>>', callback_data: `${this.title}btn2${unqID}` }]
           ]}) 
       }
 
-      var mPlayer = await this.bot.sendVideo(this.chat_id, this.video, staerKeyBoard)
+      var mPlayer = await this.bot.sendVideo(this.chat_id, this.video, {
+        caption: `*Название аниме: *${this.title}\n*Название серии: *${video.vol[0].name}`,
+        parse_mode: 'Markdown',
+        reply_markup: startKeyboard.reply_markup
+      });
       await this.bot.on('callback_query', async query => {
         const callback =  query.data 
         const message_id = query.message.message_id
+        if(callback === "number"){
+          return
+        }
         if(callback === `${this.title}btn1${unqID}`){
           if(counter > 1){
             counter--
             mPlayer = await this.bot.editMessageMedia({      
               type: 'video',
-              media: this.video,
-              caption: this.title}, 
+              media: video.vol[counter-1].id,
+              caption: `*Название аниме: *${this.title}\n*Название серии: *${video.vol[counter-1].name}`,
+              parse_mode: 'Markdown'}, 
               {chat_id: this.chat_id, message_id: message_id, reply_markup: anime_menu(counter,this.title).reply_markup})
           }
-          if(counter ==+ 1){
+          //Первая страница
+          if(counter === 1){
             mPlayer = await this.bot.editMessageMedia({      
               type: 'video',
               media: this.video,
-              caption: this.title}, 
+              caption: `*Название аниме: *${this.title}\n*Название серии: *${video.vol[0].name}`,
+              parse_mode: 'Markdown'}, 
               {chat_id: this.chat_id, message_id: message_id, reply_markup:
                 JSON.stringify({
                   inline_keyboard: [
@@ -72,8 +89,9 @@ const MediaPlayer = class {
           counter++
           mPlayer = await this.bot.editMessageMedia({      
             type: 'video',
-            media: this.video,
-            caption: this.title}, 
+            media: video.vol[counter-1].id,
+            caption: `*Название аниме: *${this.title}\n*Название серии: *${video.vol[counter-1].name}`,
+            parse_mode: 'Markdown'}, 
             {chat_id: this.chat_id, message_id: message_id, reply_markup: anime_menu(counter,this.title).reply_markup})
           }})
     }
