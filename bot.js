@@ -2,10 +2,12 @@ const TelegramApi = require('node-telegram-bot-api')
 var NewAnime = require('./modules/newAnime')
 var commands = require('./modules/commands')
 let videoID = require('./modules/videoID.json');
-
+var addVideo = require('./modules/videoad')
 const token = '5814757867:AAG1OCCXqJ3HXalkb4sJlnOIknG2VTRJtG0';
 var serv = require('./modules/bg');
 const keep_alive = require('./modules/bg');
+const videoAdd = require('./modules/videoad');
+const list = require('./modules/list')
 keep_alive()
 const bot = new TelegramApi(token,{polling: true});
 
@@ -23,6 +25,7 @@ function search_in_tags(tag){
 
 bot.onText(/\/start/, async msg => {
   const chat_id = msg.chat.id;
+  bot.sendMessage(chat_id, "Добро пожаловать в бота со старыми аним! Для поиска используйте /menu или /search")
   
 })
 
@@ -93,14 +96,11 @@ function search(text, mas) {
   return all_titles;
 }
 
-    // var evangelion = new NewAnime(bot, msg.chat.id, "Evangelion", "2015 год, Токио-3. 15 лет назад произошёл Второй удар, в результате чего Антарктида растаяла", 'AgACAgIAAxkBAAII6GSnGRKhW17PhPVKLLWbKn_FHfFmAAJUyjEbm9c4SUCswtqOLL9wAQADAgADeQADLwQ')
-    // await evangelion.sendAnime()
 
 var isSearchActive = false
 
 
 var handler = (search_mes) => {
-  // if(search_mes.text === "123"){
     isSearchActive = false
     var ness = search(search_mes.text, getAnimeNames())
     bot.sendMessage(search_mes.chat.id , ness, {
@@ -120,7 +120,7 @@ var handler = (search_mes) => {
 
 
 bot.on('message', async msg => {
-  console.log(msg)
+  // console.log("Name:  " + msg.video.file_name + "\nid:  " + msg.video.file_id)
     const text = msg.text;
     const chat_id = msg.chat.id;
     var isMember = await bot.getChatMember('@anime_80_2000s_chanale', chat_id)
@@ -157,6 +157,14 @@ bot.on('message', async msg => {
     }
     
 })
+
+bot.on('message', async msg =>{
+  msg.video? console.log(videoAdd(msg.video.file_name, msg.video.file_id)) : console.log("Not_A_Video")
+  console.log(msg)
+})
+
+
+
 
 
 bot.on('callback_query', async msg => {
