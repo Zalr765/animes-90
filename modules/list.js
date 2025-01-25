@@ -4,7 +4,7 @@ function list() {
     const list_mas = [];
     for (i in videoID.anime){
         z.push(`${ parseInt(i, 10) + 1}.Название: ${videoID.anime[i].name}`);
-        if(videoID.anime.length < 3){
+        if(videoID.anime.length < 3) {
             list_mas.push(z)
         }
         if (z.length === 3 || i === videoID.anime.length - 1){

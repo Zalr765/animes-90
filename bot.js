@@ -132,7 +132,7 @@ bot.on('message', async msg => {
       if(text === "/menu" && isSearchActive === false){
         for(let i = 0; i < videoID.anime.length; i++){
           allAnimesDesciption[1].push(videoID.anime[i])
-          allAnimesDesciption[0] = allAnimesDesciption[0].concat(`*${i+1}.Название:* ${videoID.anime[i].name}\n*Год выхода:* ${videoID.anime[i].year}\n*Cерии:* ${videoID.anime[i].vol.length}\n${videoID.anime[i].description}\n\n`)
+          allAnimesDesciption[0] = allAnimesDesciption[0].concat(`*${i+1}.Название:* ${videoID.anime[i].name}\n*Год выхода:* ${videoID.anime[i].year}\n*Cерии:* ${videoID.anime[i].vol?.length}\n${videoID.anime[i].description}\n\n`)
       }
       await bot.sendMessage(chat_id, allAnimesDesciption[0], {
         parse_mode: 'Markdown',
@@ -148,7 +148,7 @@ bot.on('message', async msg => {
       }
       if(text === "/search"){
         isSearchActive = true
-        await bot.sendMessage(chat_id, "Напишите название тайтла \n /evangelion")
+			await bot.sendMessage(chat_id, "Напишите название тайтла \n /evangelion")
         if(isSearchActive === true){
           bot.on('message', handler);
         }
