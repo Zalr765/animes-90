@@ -1,7 +1,7 @@
 let MediaPlayer = require('./mediaPlayer')
 let videoID = require('./videoID.json')
 const NewAnime  = class {
-    constructor(bot, chat_id, title, photo, description){
+    constructor(bot, chat_id, title, photo, description) {
         this.title = title
         this.description = description
         this.photo = photo
@@ -21,7 +21,7 @@ const NewAnime  = class {
         const callback_id =  `${unqID}`
         this.bot.sendPhoto(this.chat_id,
             this.photo,
-            {caption: `*Название*: ${this.title}\n${this.description}`, 
+            {caption: `*Название*: ${this.title}\n${this.description}`,
             reply_markup: {
             inline_keyboard: [[{text: 'Смотреть',callback_data: `${callback_id}`},]]},
             parse_mode: 'Markdown'})
@@ -29,11 +29,11 @@ const NewAnime  = class {
                 const callback = query.data 
                 if(callback === callback_id){
                     for(var i = 0;i <= videoID.anime.length - 1; i++ ){
-                        if(titleRegex.exec(videoID.anime[i].name)[0] === this.title){
+                        if(titleRegex.exec(videoID.anime[i].name)[0] === this.title) {
                             var video = videoID.anime[i].vol[0].id
                         }
                     }
-                    new MediaPlayer(this.bot, this.chat_id, video , this.title).send() 
+                    new MediaPlayer(this.bot, this.chat_id, video , this.title).send()
                 }
             })
     }

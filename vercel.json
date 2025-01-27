@@ -1,0 +1,13 @@
+{
+	"version": 2,
+	"builds": [
+	  {
+		"src": "api/webhook.js",
+		"use": "@vercel/node"
+	  }
+	],
+	"env": {
+	  "VERCEL_URL": "https://<your-vercel-project-name>.vercel.app"
+	}
+  }
+  
